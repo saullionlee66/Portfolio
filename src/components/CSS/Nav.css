@@ -1,0 +1,103 @@
+.Nav {
+  display: flex;
+  background-color: #1e1f26;
+  width: 100vw;
+  height: 8vh;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 28px;
+  color: whitesmoke;
+}
+
+.Nav #icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 30%;
+}
+
+#icon {
+  margin: 9px;
+}
+.Nav #links button {
+  display: none;
+}
+
+.Nav #links {
+  flex: 70%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  max-height: 80px;
+}
+
+.Nav .a-container a {
+  padding-left: 25px;
+}
+
+.Nav #hidden {
+  flex: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  max-height: 80px;
+  transform: translateY(100%);
+}
+
+.Nav #hidden button {
+  display: flex;
+}
+
+.Nav #hidden .a-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #323232;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.Nav #hidden .a-container a {
+  margin: 5px;
+  padding: 5px;
+}
+
+.Nav a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.Nav a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 1024px) {
+  .Nav #links a,
+  #icon-container {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .Nav #links a,
+  #icon-container {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .Nav #links a,
+  #icon-container {
+    font-size: 16px;
+  }
+  .Nav #links a {
+    display: none;
+  }
+
+  .Nav #links button {
+    display: flex;
+  }
+}
