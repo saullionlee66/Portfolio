@@ -253,7 +253,7 @@ interface NavItem {
 const NAV_ITEMS: Array<NavItem> = [
 	{
 		label: "Home",
-		href: "/home",
+		href: "/Portfolio/#/home",
 		// children: [
 		// 	{
 		// 		label: "To know me",
@@ -269,7 +269,7 @@ const NAV_ITEMS: Array<NavItem> = [
 	},
 	{
 		label: "My Projects",
-		href: "/projects",
+		href: "/Portfolio/#/projects",
 		// children: [
 		// 	{
 		// 		label: "Portfolio Showcases",
@@ -285,10 +285,10 @@ const NAV_ITEMS: Array<NavItem> = [
 	},
 	{
 		label: "About Me",
-		href: "/about",
+		href: "/Portfolio/#/about",
 	},
 	{
 		label: "Contact",
-		href: "/Portfolio/contact",
+		href: "/Portfolio/#/contact",
 	},
 ];
