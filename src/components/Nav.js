@@ -8,6 +8,7 @@ function Nav() {
 	const clickHandler = () => {
 		setShowLinks(!showLinks);
 	};
+
 	return (
 		<div className='Nav'>
 			<div id='icon-container'>
