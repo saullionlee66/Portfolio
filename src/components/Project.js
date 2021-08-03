@@ -42,8 +42,10 @@ function Project() {
 						boxShadow='lg'
 						bgColor='blue.100'>
 						<Image src={p.pic} alt='app photo' borderRadius='lg' />
-						<Heading textAlign='center'>{p.name}</Heading>
-						<Flex m='4' justify='space-evenly'>
+						<Heading textAlign='center' fontWeight='semibold'>
+							{p.name}
+						</Heading>
+						<Flex mt='4' justify='space-evenly'>
 							<Link href={p.url} isExternal>
 								{<LinkIcon fontSize='large' />}
 							</Link>
@@ -51,8 +53,9 @@ function Project() {
 								{<GitHubIcon fontSize='large' />}
 							</Link>
 						</Flex>
-						<Divider borderColor='blue.800' border='2px' />
-						<Box p='4'>
+						<Box p='6'>
+							<Divider borderColor='blue.800' border='1px' />
+
 							<Text fontSize='lg' fontWeight='bold'>
 								{p.description}
 							</Text>
@@ -63,7 +66,7 @@ function Project() {
 									my='2'
 									p='2'
 									bg='blue.400'
-									color='white'>
+									color='black'>
 									{s}
 								</Badge>
 							))}

@@ -70,7 +70,7 @@ export default function SmallWithLogoLeft() {
 				maxW='6xl'
 				py={6}
 				direction={{ base: "column", md: "row" }}
-				spacing={4}
+				spacing={8}
 				justify={{ md: "center", lg: "space-evenly" }}
 				aligh={{ base: "center", md: "center" }}>
 				<Text fontWeight='semibold'>

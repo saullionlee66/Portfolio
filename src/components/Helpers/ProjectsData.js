@@ -11,7 +11,7 @@ export const projects = [
 		name: "ToDo Application",
 		pic: todoPic,
 		description:
-			"A responsive-designed Todo Application with add, update, toggle, and delete functions",
+			"A responsive-designed Todo Application with add, update, toggle, and delete functions. Color mode can be one-click switched.",
 		stack: ["React", "Redux Toolkit", "TypeScript", "Chakra-UI", "React-Icons"],
 		url: "https://saullionlee66.github.io/React-Redux-ToolKit/",
 		sourceURL: "https://github.com/saullionlee66/React-Redux-ToolKit",
