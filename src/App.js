@@ -12,10 +12,10 @@ function App() {
 		<Router basename='/' className='App'>
 			<NavBar />
 			<Switch>
-				<Route exact path='/home' component={Home} />
-				<Route exact path='/projects' component={Project} />
-				<Route exact path='/contact' component={Contact} />
-				<Route exact path='/about' component={About} />
+				<Route exact path='/#/home' component={Home} />
+				<Route exact path='/#/projects' component={Project} />
+				<Route exact path='/#/contact' component={Contact} />
+				<Route exact path='/#/about' component={About} />
 				<Route exact path='/' component={Home} />
 			</Switch>
 			<NewFooter />
