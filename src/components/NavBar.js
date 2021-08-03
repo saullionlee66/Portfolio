@@ -289,6 +289,6 @@ const NAV_ITEMS: Array<NavItem> = [
 	},
 	{
 		label: "Contact",
-		href: "/contact",
+		href: "/Portfolio/contact",
 	},
 ];
