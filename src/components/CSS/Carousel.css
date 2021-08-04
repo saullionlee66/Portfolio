@@ -49,18 +49,20 @@
 }
 
 .inner .center .info {
+
   padding:8px;
   border-radius: 8px;
   background-color: rgb(255, 255, 255, 0.7);
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: Palatino,serif;
 }
 
 .inner .center .info h1 {
-
+  color:#5121A0;
   font-size: 4.5rem;
 }
 
 .inner .center .info h2 {
+  color:  #5121A0;
   font-size: 3.5rem;
 }
 

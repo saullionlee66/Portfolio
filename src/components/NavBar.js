@@ -2,7 +2,6 @@ import {
 	Box,
 	Flex,
 	Text,
-	IconButton,
 	Stack,
 	Collapse,
 	Icon,
@@ -13,6 +12,8 @@ import {
 	useColorModeValue,
 	useBreakpointValue,
 	useDisclosure,
+	IconButton,
+	useColorMode,
 } from "@chakra-ui/react";
 import {
 	HamburgerIcon,
@@ -21,9 +22,11 @@ import {
 	ChevronRightIcon,
 } from "@chakra-ui/icons";
 import FingerprintIcon from "@material-ui/icons/Fingerprint";
+import { FaSun, FaMoon } from "react-icons/fa";
 
 export default function WithSubnavigation() {
 	const { isOpen, onToggle } = useDisclosure();
+	const { colorMode, toggleColorMode } = useColorMode();
 
 	return (
 		<Box>
@@ -54,7 +57,9 @@ export default function WithSubnavigation() {
 					<Text
 						textAlign={useBreakpointValue({ base: "center", md: "left" })}
 						fontFamily={"heading"}
-						color={useColorModeValue("gray.800", "white")}>
+						color={useColorModeValue("gray.800", "white")}
+						textTransform='uppercase'
+						align='center'>
 						<FingerprintIcon fontSize='large' />
 						Saul's Portfolio
 					</Text>
@@ -90,6 +95,14 @@ export default function WithSubnavigation() {
 						Sign Up
 					</Button>
 				</Stack> */}
+				<IconButton
+					aria-label='Change Color Mode'
+					icon={colorMode === "light" ? <FaSun /> : <FaMoon />}
+					isRound={true}
+					size='md'
+					alignSelf='flex-end'
+					onClick={toggleColorMode}
+				/>
 			</Flex>
 
 			<Collapse in={isOpen} animateOpacity>
@@ -105,7 +118,7 @@ const DesktopNav = () => {
 	const popoverContentBgColor = useColorModeValue("white", "gray.800");
 
 	return (
-		<Stack direction={"row"} spacing={4}>
+		<Stack direction={"row"} spacing={4} align='center'>
 			{NAV_ITEMS.map((navItem) => (
 				<Box key={navItem.label}>
 					<Popover trigger={"hover"} placement={"bottom-start"}>
@@ -113,9 +126,10 @@ const DesktopNav = () => {
 							<Link
 								p={2}
 								href={navItem.href ?? "#"}
-								fontSize={"sm"}
+								fontSize={"md"}
 								fontWeight={500}
 								color={linkColor}
+								textTransform='uppercase'
 								_hover={{
 									textDecoration: "none",
 									color: linkHoverColor,
@@ -208,6 +222,7 @@ const MobileNavItem = ({ label, children, href }: NavItem) => {
 					textDecoration: "none",
 				}}>
 				<Text
+					textTransform='uppercase'
 					fontWeight={600}
 					color={useColorModeValue("gray.600", "gray.200")}>
 					{label}

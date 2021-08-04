@@ -13,8 +13,11 @@ import {
 	Link,
 	Flex,
 	Image,
+	useColorMode,
 } from "@chakra-ui/react";
 function Project() {
+	const { colorMode } = useColorMode();
+
 	return (
 		<VStack p={4}>
 			<Heading
@@ -40,16 +43,16 @@ function Project() {
 						borderWidth='1px'
 						borderRadius='lg'
 						boxShadow='lg'
-						bgColor='blue.100'>
+						bgColor={colorMode === "light" ? "blue.200" : "blue.800"}>
 						<Image src={p.pic} alt='app photo' borderRadius='lg' />
-						<Heading textAlign='center' fontWeight='semibold'>
+						<Heading textAlign='center' fontWeight='bold'>
 							{p.name}
 						</Heading>
 						<Flex mt='4' justify='space-evenly'>
-							<Link href={p.url} isExternal>
+							<Link href={p.url} isExternal borderRadius='full'>
 								{<LinkIcon fontSize='large' />}
 							</Link>
-							<Link href={p.sourceURL} isExternal>
+							<Link href={p.sourceURL} isExternal borderRadius='full'>
 								{<GitHubIcon fontSize='large' />}
 							</Link>
 						</Flex>

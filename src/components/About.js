@@ -1,37 +1,38 @@
 import React from 'react'
-import { Flex, Text, Box, Heading, Image } from "@chakra-ui/react";
+import {
+	Flex,
+	Text,
+	Box,
+	Heading,
+	Image,
+	useColorMode,
+} from "@chakra-ui/react";
 
 function About() {
+	const { colorMode } = useColorMode();
+
 	return (
-		<Box bgColor='blue.200'>
-			<Flex bgColor='green.600' p='4'>
+		<Box bgColor={colorMode === "light" ? "blue.200" : "blue.800"}>
+			<Flex bgColor={colorMode === "light" ? "green.500" : "green.900"} p='4'>
 				<Heading fontSize='7xl' fontWeight='extrabold'>
 					ABOUT
 				</Heading>
 			</Flex>
-			<Box p={5} spacing={8}>
-				<Text fontWeight='extrabold' fontSize={{ sm: "2xl", md: "4xl" }}>
-					Hi, I'm Saul.
-				</Text>
-				<Text fontSize={{ sm: "xl", md: "2xl" }}>
-					Welcome to my personal website. You should know me better.
-				</Text>
-				<Text fontSize={{ sm: "xl", md: "2xl" }}>
-					I'm now finding a new career in IT industry.
-				</Text>
-				<Text fontSize={{ sm: "xl", md: "2xl" }}>
+			<Box p={5} spacing={8} fontSize={{ sm: "xl", md: "2xl" }}>
+				<Text fontWeight='extrabold'>Hi, I'm Saul.</Text>
+				<Text>Welcome to my personal website. You should know me better.</Text>
+				<Text>I'm now finding a new career in IT industry.</Text>
+				<Text>
 					Just like I managed everything on my own about immigration to Canada,
 					I again finished my programming college program in my spare time.
 				</Text>
-				<Text fontSize={{ sm: "xl", md: "2xl" }}>
-					These experience proved me to be a fast and good leaner.
-				</Text>
-				<Text fontSize={{ sm: "xl", md: "2xl" }}>
+				<Text>These experience proved me to be a fast and good leaner.</Text>
+				<Text>
 					In my personal life, I like to help others. I'm still helping many
 					people who want to immigrate to Canada, giving them advice and
 					answering questions.
 				</Text>
-				<Text fontSize={{ sm: "xl", md: "2xl" }}>
+				<Text>
 					And I really believe one day I will help others in IT industry
 					whenever I have the ability and experience.
 				</Text>
