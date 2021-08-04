@@ -1,4 +1,6 @@
-
+# React + Chakra UI
+## I build this website for my portfolio. 
+## It has been deployed on GitHub Pages: https://saullionlee66.github.io/Portfolio/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
