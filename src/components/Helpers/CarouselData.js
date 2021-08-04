@@ -22,7 +22,7 @@ export const images = [
 	},
 	{
 		title: "One more secret of Saul",
-		subtitle: "He's a foodie and can't deny the beauty of seafood",
+		subtitle: "He's a foodie and cannot resist the beauty of seafood",
 		url: sashimi,
 	},
 	{
