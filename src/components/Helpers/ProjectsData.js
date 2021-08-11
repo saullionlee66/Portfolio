@@ -38,7 +38,7 @@ export const projects = [
 		name: "Book System Application",
 		pic: booksystemPic,
 		description: `A React app with CRUD functions combined with Firebase Serverless Authentication and Registration.
-		User can Create, Review, Update, and Delete book information. Use can signup and login, update/reset password via firebase service.`,
+		User can Create, Review, Update, and Delete book information. User can also signup and login, update/reset/ password via firebase service.`,
 
 		stack: [
 			"React",
